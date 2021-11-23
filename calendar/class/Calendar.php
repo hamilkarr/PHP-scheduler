@@ -86,19 +86,13 @@ class Calendar
 		];
 	}
 	
-	/** 
-	* 요일목록
-	*
-	*/
+	/** 요일목록 */
 	public function getYoils()
 	{
 		return ["일","월","화","수","목","금","토"];
 	}
 	
-	/**
-	* timestamp에 따른 요일 
-	*
-	*/
+	/** timestamp에 따른 요일 */
 	public function getYoil($stamp)
 	{
 		$yoils = $this->getYoils();

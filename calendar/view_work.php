@@ -9,15 +9,16 @@ if (!$info) {
 ?>
 <div class='popup_tit'><?=$info['date']?></div>
 <dl>
-	<dt>일정</dt>
-	<dd><?=$info['title']?></dd>
+  <dt>일정</dt>
+  <dd><?=$info['title']?></dd>
 </dl>
 <dl>
-	<dt>내용</dt>
-	<dd><?=nl2br($info['content'])?></dd>
+  <dt>내용</dt>
+  <dd><?=nl2br($info['content'])?></dd>
 </dl>
 
 <div class='btns'>
-	<a class='btn btn1' href='work_ps.php?mode=delete&date=<?=$info['date']?>' target='ifrmHidden' onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
-	<span class='btn btn2' onclick="yh.layer.close();">닫기</span>
+  <a class='btn btn1' href='work_ps.php?mode=delete&date=<?=$info['date']?>' target='ifrmHidden'
+    onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
+  <span class='btn btn2' onclick="yh.layer.close();">닫기</span>
 </div>

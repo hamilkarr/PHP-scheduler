@@ -1,14 +1,8 @@
 var yh = yh || {};
 
-/**
- * 레이어팝업
- *
- */
+/** 레이어팝업 */
 yh.layer = {
-  /**
-   * 팝업 열기
-   *
-   */
+  /** 팝업 열기 */
   popup: function (url, width, height) {
     width = width || 400;
     height = height || 400;
@@ -58,10 +52,7 @@ yh.layer = {
         console.error(error);
       });
   },
-  /**
-   * 팝업 닫기
-   *
-   */
+  /** 팝업 닫기 */
   close: function () {
     $('#layer_popup, #layer_dim').remove();
   },

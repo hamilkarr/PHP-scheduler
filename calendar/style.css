@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 
+/** 공통 설정 */
 * {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
@@ -12,13 +13,12 @@ html {
 body {
   padding: 80px 0 0;
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
   color: #000000;
 }
-
 ul {
   list-style: none;
   padding: 0;
@@ -28,21 +28,22 @@ ul {
 #title {
   text-align: center;
   padding: 15px 0;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 20px;
   position: fixed;
-  width: 100%; 
-  left: 0; 
+  width: 100%;
+  left: 0;
   top: 0;
-  background:rgba(0,0,0, 0.4);
-  color: #ffffff; 
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
 }
 #title i {
-	font-size: 24px; margin-right: 5px; 
-	vertical-align: middle; 
+  font-size: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-/* calendar Box */
+/* Calendar Box */
 .scheduler_container {
   position: relative;
 }
@@ -70,159 +71,175 @@ ul:after {
   display: block;
 }
 
-.add_schedule { 
-	position: fixed; 
-	right: calc(50% - 500px);
-	top: 12px; 
-	height: 35px; 
-	border: 0;
-	background:#000000; 
-	color: #ffffff; 
-	padding: 0 20px;
-	border-radius: 20px;
-	cursor: pointer; 
+.add_schedule {
+  position: fixed;
+  right: calc(50% - 500px);
+  top: 12px;
+  height: 35px;
+  border: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 0 20px;
+  border-radius: 20px;
+  cursor: pointer;
 }
-.add_schedule:hover { 
-	opacity: 0.5;
-}
-
-.year_month { 
-	text-align: center; 
-	margin-bottom: 20px;
+.add_schedule:hover {
+  opacity: 0.5;
 }
 
-.year_month .current { 
-	font-weight: bold; 
-	font-size: 22px;
-	vertical-align: middle; 
+.year_month {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.year_month .current {
+  font-weight: bold;
+  font-size: 22px;
+  vertical-align: middle;
 }
 
 .year_month a {
-	vertical-align: middle; 
-	margin: 0 15px; 
+  vertical-align: middle;
+  margin: 0 15px;
 }
 .year_month a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-.scheduler_container .yoils li:first-of-type { 
-	color: red;
+.scheduler_container .yoils li:first-of-type {
+  color: red;
 }
 .scheduler_container .yoils li:last-of-type {
-	color: skyblue;
+  color: skyblue;
 }
-.scheduler_container .yoils li { 
-	text-align: center;
-	font-size: 15px;
+.scheduler_container .yoils li {
+  text-align: center;
+  font-size: 15px;
 }
 
 .scheduler_container .yoils {
-	border-bottom: 1px solid #000000;
-	padding: 10px 0;
-	margin-bottom: 10px;
-} 
-
-.scheduler_container .day { 
-	padding: 10px; 
-	position: relative;
+  border-bottom: 1px solid #000000;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
-.scheduler_container .day .no { 
-	font-size: 13px; 
+
+.scheduler_container .day {
+  padding: 10px;
+  position: relative;
+}
+.scheduler_container .day .no {
+  font-size: 13px;
 }
 
 .scheduler_container .day .view_schedule {
-	font-size: 30px;
-	font-weight: bold;
-	display: block;
-	color: #444444;
-	width: 30px;
-	position: absolute;
-	bottom: 15px; 
-	left: calc(50% - 15px);
-	cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  color: #444444;
+  width: 30px;
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 15px);
+  cursor: pointer;
 }
 
 /** 팝업 공통 */
-.popup_tit { font-size: 18px; font-weight: bold; border-bottom: 1px solid #000000; margin-bottom: 20px; padding-bottom: 10px;}
+.popup_tit {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
 
-
-#layer_popup dl { display: table; width: 100%; }
-#layer_popup dt { display: table-cell; width: 50px; vertical-align: middle; }
-#layer_popup dd { display: table-cell; margin: 0; }
+#layer_popup dl {
+  display: table;
+  width: 100%;
+}
+#layer_popup dt {
+  display: table-cell;
+  width: 50px;
+  vertical-align: middle;
+}
+#layer_popup dd {
+  display: table-cell;
+  margin: 0;
+}
 #layer_popup input[type='date'],
 #layer_popup input[type='text'] {
-	border: 1px solid #000000; 
-	width: 100%; 
-	height: 35px;
-	padding: 0 10px;
+  border: 1px solid #000000;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
 }
 
-#layer_popup textarea { 
-	border: 1px solid #000000;
-	height: 120px;
-	resize: none;
-	padding: 10px;
-	width: 100%;
+#layer_popup textarea {
+  border: 1px solid #000000;
+  height: 120px;
+  resize: none;
+  padding: 10px;
+  width: 100%;
 }
 
-#layer_popup input[type='submit'] { 
-	background-color: #000000;
-	color: #ffffff;
-	height: 40px;
-	border: 0; 
-	cursor: pointer; 
-	width: 100%; 
-	display: block;
+#layer_popup input[type='submit'] {
+  background-color: #000000;
+  color: #ffffff;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  display: block;
 }
 
-#layer_popup .btns { 
-	position: absolute; 
-	bottom: 25px;
-	width: calc(100% - 60px);
-	left: 30px;
+#layer_popup .btns {
+  position: absolute;
+  bottom: 25px;
+  width: calc(100% - 60px);
+  left: 30px;
 }
 #layer_popup .btns:after {
-	clear: left;
-	content: '';
-	display: block;
+  clear: left;
+  content: '';
+  display: block;
 }
-#layer_popup .btns .btn { 
-	display: block; 
-	width: 50%; 
-	border: 1px solid #000000;
-	font-size: 14px;
-	font-weight: bold;
-	height: 40px;
-	text-align: center;
-	cursor: pointer;
-	line-height: 38px;
-	float: left;
+#layer_popup .btns .btn {
+  display: block;
+  width: 50%;
+  border: 1px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 38px;
+  float: left;
 }
-#layer_popup .btns .btn1 { 
-	background-color: #000000;
-	color: #ffffff;
+#layer_popup .btns .btn1 {
+  background-color: #000000;
+  color: #ffffff;
 }
 
+/* 반응형 css */
 
 @media all and (max-width: 1000px) {
-	.add_schedule {
-		right: 10px;
-	}
+  .add_schedule {
+    right: 10px;
+  }
 }
 
 @media all and (max-width: 500px) {
-	.days li {
-		height: 70px; 
-	}
-	
-	.scheduler_container .day .view_schedule {
-		font-size: 25px;
-		bottom: 10px;
-	}
-	
-	.add_schedule { 
-		height: 30px;
-		font-size: 12px;
-		padding: 5px 10px;
-	}
+  .days li {
+    height: 70px;
+  }
+
+  .scheduler_container .day .view_schedule {
+    font-size: 25px;
+    bottom: 10px;
+  }
+
+  .add_schedule {
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }
