@@ -121,3 +121,29 @@ popup: function (url, width, height) {
       zIndex: 100,
     });
 ```
+   ### CSS
+   - 반응형 CSS
+```css
+@media all and (max-width: 1000px) {
+  .add_schedule {
+    right: 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .days li {
+    height: 70px;
+  }
+
+  .scheduler_container .day .view_schedule {
+    font-size: 25px;
+    bottom: 10px;
+  }
+
+  .add_schedule {
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+```
